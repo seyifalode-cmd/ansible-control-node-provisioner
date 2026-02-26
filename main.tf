@@ -15,7 +15,7 @@ provider "aws" {
 
 resource "aws_instance" "example" {
   ami                    = data.aws_ssm_parameter.webserver-ami.value
-  instance_type          = "t2.micro"
+  instance_type          = "t3.micro"
   vpc_security_group_ids = [aws_security_group.instance.id]
   key_name               = aws_key_pair.aws-key.key_name
 
@@ -82,7 +82,7 @@ resource "aws_security_group" "instance" {
 #Create key-pair for logging into EC2 
 #======================================
 resource "aws_key_pair" "aws-key" {
-  key_name   = "ansible-control"
+  key_name   = "ansible-control2"
   public_key = file(var.ssh_key_public)
 }
 
