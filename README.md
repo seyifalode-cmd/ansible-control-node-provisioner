@@ -143,7 +143,7 @@ terraform destroy
 
 ```bash
 # Clone the repository
-git clone https://github.com/Seyifunmi0604/ansible-control-node-provisioner.git
+git clone https://github.com/seyifalode-cmd/ansible-control-node-provisioner.git
 cd ansible-control-node-provisioner
 
 # Initialize Terraform
