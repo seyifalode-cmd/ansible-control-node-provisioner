@@ -1,4 +1,6 @@
-# **Ansible Control Node Provisioner**
+# Ansible Control Node Provisioner
+
+Oluwaseyi Michael Falode | Cloud & DevOps Engineering | Toronto, ON
 
 Terraform-driven provisioning of an AWS EC2 instance that bootstraps itself into a fully configured Ansible control node — including SSH key generation — using remote-exec and file provisioners.
 
